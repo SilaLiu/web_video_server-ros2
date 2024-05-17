@@ -307,7 +307,7 @@ void LibavStreamer::sendImage(const cv::Mat &img, const rclcpp::Time &time)
   // Encode the frame
   AVPacket pkt;
   int got_packet;
-  av_init_packet(&pkt);
+  //av_init_packet(&pkt);//modify by lide 
 
 #if (LIBAVCODEC_VERSION_MAJOR < 54)
   int buf_size = 6 * output_width_ * output_height_;
