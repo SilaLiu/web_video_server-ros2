@@ -16,3 +16,20 @@ web_video_server is released with a BSD license. For full terms and conditions, 
 
 ### Authors
 See the [AUTHORS](AUTHORS.md) file for a full list of contributors.
+
+### Install    
+```
+sudo apt-get install ros-humble-async-web-server-cpp     
+git clone this repo
+colcon  build    
+source install/setup.bash   
+orangepi@orangepi5:~$ ros2 run web_video_server 
+--prefix          web_video_server  
+orangepi@orangepi5:~$ ros2 run web_video_server web_video_server 
+[INFO] [1715939457.393743263] [web_video_server]: Waiting For connections on 0.0.0.0:8080
+topic_type: sensor_msgs/msg/CameraInfo
+topic_type: sensor_msgs/msg/Image
+topic_type: rcl_interfaces/msg/ParameterEvent
+topic_type: rcl_interfaces/msg/Log
+```
+http://192.168.3.19:8080/stream_viewer?topic=/image_raw
