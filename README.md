@@ -32,4 +32,4 @@ topic_type: sensor_msgs/msg/Image
 topic_type: rcl_interfaces/msg/ParameterEvent
 topic_type: rcl_interfaces/msg/Log
 ```
-http://192.168.3.19:8080/stream_viewer?topic=/image_raw
+http://192.168.10.179:8080/stream_viewer?topic=/image_raw
