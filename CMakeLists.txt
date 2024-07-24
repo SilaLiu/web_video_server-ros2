@@ -12,6 +12,9 @@ find_package(sensor_msgs REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(Boost REQUIRED COMPONENTS thread)
 
+find_package(ament_cmake REQUIRED)
+
+
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(avcodec libavcodec REQUIRED)
 pkg_check_modules(avformat libavformat REQUIRED)
@@ -79,5 +82,12 @@ install(DIRECTORY include/${PROJECT_NAME}/
    DESTINATION include/${PROJECT_NAME}
    FILES_MATCHING PATTERN "*.h" PATTERN "*.hpp"
 )
+
+
+install(DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME}/
+  
+)
+
 
 ament_package()
