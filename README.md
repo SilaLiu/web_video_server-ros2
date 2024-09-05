@@ -22,6 +22,7 @@ See the [AUTHORS](AUTHORS.md) file for a full list of contributors.
 sudo apt-get install ros-humble-async-web-server-cpp     
 git clone this repo
 colcon  build    
+colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
 source install/setup.bash   
 orangepi@orangepi5:~$ ros2 run web_video_server 
 --prefix          web_video_server  
